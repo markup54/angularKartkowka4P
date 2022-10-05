@@ -1,0 +1,7 @@
+<div *ngIf = "planszowka">
+  <h3>Tytuł gry: {{planszowka.nazwa}}</h3>
+<img src="{{planszowka.zdj}}" height="100px"alt="">
+<p>Min {{planszowka.minLG}}</p>
+<p>Max {{planszowka.maxLG}}</p>
+<p (click)="zagraj()">Liczba rozegranych partii {{planszowka.liczbaPartii}}</p>
+</div>
